@@ -1,4 +1,4 @@
-package basic_objects;
+package notes01_basic_objects;
 
 public class Student {
 
@@ -29,8 +29,16 @@ public class Student {
 	 *   instance variables to a "default" value.  (whatever
 	 *   you want it to be)
 	 */
-	
-	
+	public Student() {
+		gpa = 0.0;
+		idNum = 0;
+		name = "No Name";
+	}
+	public Student(int idNum, String name) {
+		this.gpa = 0.0;   
+		this.idNum = idNum;
+		this.name = name;
+	}
 	
 	//any other method
 	
@@ -61,5 +69,11 @@ public class Student {
 	/*
 	 * toString() method
 	 */
+	@Override
+	public String toString() {
+		return "Name: " + name
+		 	 + "\nID#:  " + idNum
+		 	 + "\nGPA:  " + gpa;
+	}
 	
 }

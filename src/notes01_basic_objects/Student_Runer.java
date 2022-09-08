@@ -1,4 +1,4 @@
-package basic_objects;
+package notes01_basic_objects;
 
 public class Student_Runer {
 
@@ -23,7 +23,28 @@ public class Student_Runer {
 		s3.addGPA(-2);
 		System.out.println();
 		System.out.println(s3.getGPA());
+	
 		
+		
+		Student s4 = new Student();
+		System.out.println("\n" + s4.getName());
+		System.out.println(s4.getIDNum());
+		System.out.println(s4.getGPA());
+		
+		
+		Student s5 = new Student(1513656413, "Joseph");
+		System.out.println("\n" + s5.getName());
+		System.out.println(s5.getIDNum());
+		System.out.println(s5.getGPA());
+		
+		
+		
+		System.out.println();
+		System.out.println(s1);
+		System.out.println(s2);
+		System.out.println(s3);
+		System.out.println(s4);
+		System.out.println(s5);
 		
 	}
 	
