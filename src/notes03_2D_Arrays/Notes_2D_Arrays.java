@@ -13,7 +13,7 @@ package notes03_2D_Arrays;
  *   BUT, that's NOT what's actually happening
  *   
  *   
- *    
+ * For Each Loops At Bottom
  *    
  *    
  */
@@ -38,6 +38,7 @@ public class Notes_2D_Arrays {
 		
 		//traversing a 2D array
 		for (int i = 0; i < nums2.length; i++) {  //cycle through all the rows
+			
 			for (int j = 0; j < nums2[i].length; j++) {  //cycle through all the columns on a given row
 				
 				nums2[i][j] = i + j;  //setting the elements in the array
@@ -87,6 +88,31 @@ public class Notes_2D_Arrays {
 		 * Traversing is just like a 2D with a third loop
 		 */
 		
+		
+		System.out.println();
+		
+		/*
+		 * For Each Loops
+		 * 
+		 * loops through each item of a list
+		 * 
+		 * WARNING!!!
+		 *    DOES NOT track index
+		 *    CAN'T Change Size of Array 
+		 */
+		
+		//grab each row in order
+		for (int[] row : nums2) {
+			
+			//grab each element in that row in order
+			for (int element : row) {
+				
+				System.out.print(element + " ");
+					
+			}
+			System.out.println();
+			
+		}
 		
 		
 		
