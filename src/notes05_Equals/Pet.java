@@ -1,4 +1,4 @@
-package notes06_Equals;
+package notes05_Equals;
 
 public class Pet {
 
