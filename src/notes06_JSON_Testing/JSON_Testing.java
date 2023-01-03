@@ -39,7 +39,7 @@ public class JSON_Testing {
 			//cast URL object to HttpURLConnection
 			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 			conn.setRequestMethod("GET");	//we are getting (not sending or downloading)
-			conn.connect();
+			conn.connect();  //makes connection and gets data
 
 			// Getting the response code
 			int responsecode = conn.getResponseCode();
@@ -66,6 +66,7 @@ public class JSON_Testing {
 				// Using the JSON simple library parse the rawJSON String into a JSON object
 				JSONObject json = (JSONObject) parse.parse(rawJSON);
 				
+				//Get the data you need
 				id = (String) json.get("id");
 				joke = (String) json.get("value");
 				
